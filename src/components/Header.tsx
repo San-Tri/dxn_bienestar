@@ -5,10 +5,11 @@ function Header() {
     <>
       <header>
         <div className="logo">
-          <Leaf />
+          <Leaf color="green" />
           <p>DXN Bienestar</p>
         </div>
         <div className="accesos_directos">
+          <Menu />
           <nav>
             <ul>
               <li>
