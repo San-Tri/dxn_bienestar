@@ -1,35 +1,75 @@
-import { Leaf, Menu } from "lucide-react";
+import { useState } from "react";
+import { Leaf, Menu, X } from "lucide-react";
 
 function Header() {
+  {
+    /* agregar el useState */
+  }
+  const [menuAbierto, setMenuAbierto] = useState(false);
+  const [seccionMarcado, setSeccionMarcado] = useState(false);
   return (
     <>
-      <header>
-        <div className="logo">
-          <Leaf color="green" />
-          <p>DXN Bienestar</p>
+      <header className="w-full h-auto justify-between flex items-center px-4 py-3">
+        {/* logo y nombre */}
+        <div className="flex gap-2">
+          <Leaf className="text-[#10B981] stroke-3" />
+          <p className="font-bold text-[#1F2937]">DXN Bienestar</p>
         </div>
+
+        {/*boton de la amburguesa */}
         <div className="accesos_directos">
-          <Menu />
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Inicio</a>
+          <button onClick={() => setMenuAbierto(!menuAbierto)}>
+            {/*si es falso muestra el menu y si es verdadero muestra la X */}
+            {menuAbierto ? (
+              <X className="text-[#1F2937]" />
+            ) : (
+              <Menu className="text-[#1F2937]" />
+            )}
+          </button>
+        </div>
+
+        {/*barra de navegacion */}
+        {menuAbierto && (
+          <nav className="absolute top-13.5 left-0 backdrop-blur-md border border-[#10B981] w-full flex justify-center">
+            <ul className="py-4 md:flex">
+              <li
+                onClick={() => setSeccionMarcado(!seccionMarcado)}
+                className="py-2"
+              >
+                {seccionMarcado ? (
+                  <a href="#" className="font-bold text-[#1F2937]">
+                    Inicio
+                  </a>
+                ) : (
+                  <a href="#" className="font-bold text-[#10B981] underline">
+                    Inicio
+                  </a>
+                )}
               </li>
-              <li>
-                <a href="#">Productos</a>
+              <hr />
+              <li className="py-2">
+                <a href="#" className="font-bold text-[#1F2937]">
+                  Productos
+                </a>
               </li>
-              <li>
-                <a href="#">Novedades</a>
+              <li className="py-2">
+                <a href="#" className="font-bold text-[#1F2937]">
+                  Novedades
+                </a>
               </li>
-              <li>
-                <a href="#">Afiliate</a>
+              <li className="py-2">
+                <a href="#" className="font-bold text-[#1F2937]">
+                  Afiliate
+                </a>
               </li>
-              <li>
-                <a href="#">Contacto</a>
+              <li className="py-2">
+                <a href="#" className="font-bold text-[#1F2937]">
+                  Contacto
+                </a>
               </li>
             </ul>
           </nav>
-        </div>
+        )}
       </header>
     </>
   );
