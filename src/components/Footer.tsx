@@ -1,4 +1,5 @@
 import { Leaf, Map, Phone, Mail } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -95,8 +96,12 @@ function Footer() {
         <h2 className="font-bold text-[#1F2937] font-['Lexend'] pb-3">
           Síguenos
         </h2>
-        <button>Facebook</button>
-        <button>Instagram</button>
+        <button>
+          <FaFacebook />
+        </button>
+        <button>
+          <FaInstagram />
+        </button>
       </div>
       {/* Foot */}
       <div className="foot m-5">
