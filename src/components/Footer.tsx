@@ -96,12 +96,14 @@ function Footer() {
         <h2 className="font-bold text-[#1F2937] font-['Lexend'] pb-3">
           Síguenos
         </h2>
-        <button>
-          <FaFacebook />
-        </button>
-        <button>
-          <FaInstagram />
-        </button>
+        <div className="flex gap-3">
+          <button className="bg-[#F3F4F6] p-2 rounded-full">
+            <FaFacebook className="text-xl text-[#4B5563]" />
+          </button>
+          <button className="bg-[#F3F4F6] p-2 rounded-full">
+            <FaInstagram className="text-xl text-[#4B5563]" />
+          </button>
+        </div>
       </div>
       {/* Foot */}
       <div className="foot m-5">
