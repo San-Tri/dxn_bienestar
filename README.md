@@ -7,6 +7,7 @@ Una aplicación web moderna y responsiva para mostrar el catálogo de productos,
 - **React (Vite):** Para la estructura basada en componentes.
 - **Tailwind CSS (v4):** Para el maquetado responsivo y estilos.
 - **Lucide React:** Para la iconografía limpia y moderna.
+- **React Icons:** Para recursos visuales y logotipos de marcas.
 
 ## Cómo ejecutar el proyecto en tu computadora
 
