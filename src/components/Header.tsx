@@ -13,7 +13,9 @@ function Header() {
         {/* logo y nombre */}
         <div className="flex gap-2">
           <Leaf className="text-[#10B981] stroke-3" />
-          <p className="font-bold text-[#1F2937]">DXN Bienestar</p>
+          <p className="font-bold font-['Lexend'] text-[#1F2937]">
+            DXN Bienestar
+          </p>
         </div>
 
         {/*boton de la amburguesa */}
@@ -30,40 +32,57 @@ function Header() {
 
         {/*barra de navegacion */}
         {menuAbierto && (
-          <nav className="absolute top-13.5 left-0 backdrop-blur-md border border-[#10B981] w-full flex justify-center">
-            <ul className="py-4 md:flex">
+          <nav className="absolute top-13.5 left-0 backdrop-blur-md w-full">
+            <ul className="ml-20">
               <li
                 onClick={() => setSeccionMarcado(!seccionMarcado)}
-                className="py-2"
+                className="py-5"
               >
                 {seccionMarcado ? (
-                  <a href="#" className="font-bold text-[#1F2937]">
+                  <a
+                    href="#"
+                    className="font-bold font-['Lexend'] text-[#1F2937]"
+                  >
                     Inicio
                   </a>
                 ) : (
-                  <a href="#" className="font-bold text-[#10B981] underline">
+                  <a
+                    href="#"
+                    className="font-bold font-['Lexend'] text-[#10B981] underline"
+                  >
                     Inicio
                   </a>
                 )}
               </li>
-              <hr />
-              <li className="py-2">
-                <a href="#" className="font-bold text-[#1F2937]">
+              <li className="py-5">
+                <a
+                  href="#"
+                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                >
                   Productos
                 </a>
               </li>
-              <li className="py-2">
-                <a href="#" className="font-bold text-[#1F2937]">
+              <li className="py-5">
+                <a
+                  href="#"
+                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                >
                   Novedades
                 </a>
               </li>
-              <li className="py-2">
-                <a href="#" className="font-bold text-[#1F2937]">
+              <li className="py-5">
+                <a
+                  href="#"
+                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                >
                   Afiliate
                 </a>
               </li>
-              <li className="py-2">
-                <a href="#" className="font-bold text-[#1F2937]">
+              <li className="py-5">
+                <a
+                  href="#"
+                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                >
                   Contacto
                 </a>
               </li>
