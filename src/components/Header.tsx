@@ -48,7 +48,7 @@ function Header() {
                 ) : (
                   <a
                     href="#"
-                    className="font-bold font-['Lexend'] text-[#10B981] underline"
+                    className="font-bold font-['Lexend'] text-[#10B981] relative after:content-[''] after:absolute after:bg-[#10B981] after:w-[210%] after:h-0.5 after:-bottom-2 after:-left-1"
                   >
                     Inicio
                   </a>
