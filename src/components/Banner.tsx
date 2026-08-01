@@ -16,16 +16,20 @@ function Banner({
   redireccionBanner,
 }: BannerProps) {
   return (
-    <div>
-      <img src={imagenBanner} alt="" />
-      <p>{etiquetaBanner}</p>
-      <h2>
+    <div className="relative m-4">
+      <img src={imagenBanner} alt="" className="absolute" />
+      <p className="absolute">{etiquetaBanner}</p>
+      <h2 className="absolute">
         {tituloBanner}
-        <span>{tituloMarcadoBanner}</span>
+        <span className="absolute">{tituloMarcadoBanner}</span>
       </h2>
-      <p>{descripcionBanner}</p>
-      <a href="#">Ver Productos</a>
-      <a href={redireccionBanner}>Conoce Más</a>
+      <p className="absolute">{descripcionBanner}</p>
+      <a href="#" className="absolute">
+        Ver Productos
+      </a>
+      <a href={redireccionBanner} className="absolute">
+        Conoce Más
+      </a>
     </div>
   );
 }

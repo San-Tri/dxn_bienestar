@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <Banner
-        imagenBanner=""
+        imagenBanner="/images/banner-cafe.webp"
         etiquetaBanner="SALUD INTEGRAL"
         tituloBanner="Bienvenido a tu salud natural."
         tituloMarcadoBanner="Descubre el poder de DXN."
