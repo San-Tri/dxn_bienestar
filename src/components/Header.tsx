@@ -32,7 +32,7 @@ function Header() {
 
         {/*barra de navegacion */}
         {menuAbierto && (
-          <nav className="absolute top-13.5 left-0 backdrop-blur-md w-full">
+          <nav className="absolute top-13.5 left-0 backdrop-blur-lg w-full z-50">
             <ul className="ml-20">
               <li
                 onClick={() => setSeccionMarcado(!seccionMarcado)}
@@ -41,7 +41,7 @@ function Header() {
                 {seccionMarcado ? (
                   <a
                     href="#"
-                    className="font-bold font-['Lexend'] text-[#1F2937]"
+                    className="font-bold font-['Lexend'] text-[#FFFFFF]"
                   >
                     Inicio
                   </a>
@@ -58,7 +58,7 @@ function Header() {
               <li className="py-5">
                 <a
                   href="#"
-                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                  className="font-bold font-['Lexend'] text-[#FFFFFF]"
                 >
                   Productos
                 </a>
@@ -66,7 +66,7 @@ function Header() {
               <li className="py-5">
                 <a
                   href="#"
-                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                  className="font-bold font-['Lexend'] text-[#FFFFFF]"
                 >
                   Novedades
                 </a>
@@ -74,7 +74,7 @@ function Header() {
               <li className="py-5">
                 <a
                   href="#"
-                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                  className="font-bold font-['Lexend'] text-[#FFFFFF]"
                 >
                   Afiliate
                 </a>
@@ -82,7 +82,7 @@ function Header() {
               <li className="py-5">
                 <a
                   href="#"
-                  className="font-bold font-['Lexend'] text-[#1F2937]"
+                  className="font-bold font-['Lexend'] text-[#FFFFFF]"
                 >
                   Contacto
                 </a>
