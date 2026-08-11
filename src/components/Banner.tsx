@@ -24,7 +24,7 @@ function Banner({
       />
       <div className="absolute inset-0 bg-linear-to-b from-black to-transparent"></div>
       <div className="relative z-10 grid justify-items-center gap-6 m-4">
-        <div className="bg-[#D4AF37] rounded-full mt-2">
+        <div className="bg-accent rounded-full mt-2">
           <p className="font-['Lexend'] font-bold text-[12px] mx-3 my-1">
             {etiquetaBanner}
           </p>
@@ -32,7 +32,7 @@ function Banner({
         <div>
           <h2 className="text-[#FFFFFF] font-['Lexend'] text-3xl font-bold text-center">
             {tituloBanner}
-            <span className="text-[#10B981] font-['Lexend'] block">
+            <span className="text-primary font-['Lexend'] block">
               {tituloMarcadoBanner}
             </span>
           </h2>
@@ -45,7 +45,7 @@ function Banner({
         <div className="mt-5">
           <a
             href="#"
-            className="text-[#FFFFFF] font-['Lexend'] font-bold bg-[#10B981] px-20 py-5 rounded-full"
+            className="text-[#FFFFFF] font-['Lexend'] font-bold bg-primary px-20 py-5 rounded-full"
           >
             Ver Productos
           </a>
