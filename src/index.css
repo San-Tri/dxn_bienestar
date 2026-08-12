@@ -2,7 +2,8 @@
 @theme {
   --color-primary: #10b981;
   --color-accent: #d4af37;
-  --color-bg-ui: #f3f4f6;
+  --color-secondary: #f3f4f6;
   --color-text-primary: #1f2937;
   --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
 }

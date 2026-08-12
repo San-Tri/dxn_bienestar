@@ -30,7 +30,7 @@ function Banner({
           </p>
         </div>
         <div>
-          <h2 className="text-[#FFFFFF] font-['Lexend'] text-3xl font-bold text-center">
+          <h2 className="text-white font-['Lexend'] text-3xl font-bold text-center">
             {tituloBanner}
             <span className="text-primary font-['Lexend'] block">
               {tituloMarcadoBanner}
@@ -38,20 +38,20 @@ function Banner({
           </h2>
         </div>
         <div>
-          <p className="text-[#F3F4F6] font-['Lexend'] text-center">
+          <p className="text-secondary font-['Lexend'] text-center">
             {descripcionBanner}
           </p>
         </div>
         <div className="mt-5">
           <a
             href="#"
-            className="text-[#FFFFFF] font-['Lexend'] font-bold bg-primary px-20 py-5 rounded-full"
+            className="text-white font-['Lexend'] font-bold bg-primary px-20 py-5 rounded-full"
           >
             Ver Productos
           </a>
           <a
             href={redireccionBanner}
-            className="text-[#FFFFFF] font-['Lexend'] font-bold block text-center mt-6 backdrop-blur-md py-5 rounded-full border"
+            className="text-white font-['Lexend'] font-bold block text-center mt-6 backdrop-blur-md py-5 rounded-full border"
           >
             Conoce Más
           </a>
