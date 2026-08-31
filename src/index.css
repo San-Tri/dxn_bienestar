@@ -6,4 +6,12 @@
   --color-text-primary: #1f2937;
   --color-text-secondary: #4b5563;
   --color-text-muted: #9ca3af;
+
+  --font-lexend: "Lexend", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-lexend);
+  }
 }

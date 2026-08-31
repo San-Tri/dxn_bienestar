@@ -1,3 +1,7 @@
+/**
+ * Componente para mostrar el encabezado de la página, incluyendo el logo, nombre de la empresa y un menú de navegación.
+ */
+
 import { useState } from "react";
 import { Leaf, Menu, X } from "lucide-react";
 
@@ -13,9 +17,7 @@ function Header() {
         {/* logo y nombre */}
         <div className="flex gap-2">
           <Leaf className="text-primary stroke-3" />
-          <p className="font-bold font-['Lexend'] text-text-primary">
-            DXN Bienestar
-          </p>
+          <p className="font-bold text-text-primary">DXN Bienestar</p>
         </div>
 
         {/*boton de la amburguesa */}
@@ -39,36 +41,36 @@ function Header() {
                 className="py-5"
               >
                 {seccionMarcado ? (
-                  <a href="#" className="font-bold font-['Lexend'] text-white">
+                  <a href="#" className="font-bold text-white">
                     Inicio
                   </a>
                 ) : (
                   // usamos el after para crear el Active State del enlace directo
                   <a
                     href="#"
-                    className="font-bold font-['Lexend'] text-primary relative after:content-[''] after:absolute after:bg-primary after:w-[210%] after:h-0.5 after:-bottom-2 after:-left-1"
+                    className="font-bold text-primary relative after:content-[''] after:absolute after:bg-primary after:w-[210%] after:h-0.5 after:-bottom-2 after:-left-1"
                   >
                     Inicio
                   </a>
                 )}
               </li>
               <li className="py-5">
-                <a href="#" className="font-bold font-['Lexend'] text-white">
+                <a href="#" className="font-bold text-white">
                   Productos
                 </a>
               </li>
               <li className="py-5">
-                <a href="#" className="font-bold font-['Lexend'] text-white">
+                <a href="#" className="font-bold text-white">
                   Novedades
                 </a>
               </li>
               <li className="py-5">
-                <a href="#" className="font-bold font-['Lexend'] text-white">
+                <a href="#" className="font-bold text-white">
                   Afiliate
                 </a>
               </li>
               <li className="py-5">
-                <a href="#" className="font-bold font-['Lexend'] text-white">
+                <a href="#" className="font-bold text-white">
                   Contacto
                 </a>
               </li>

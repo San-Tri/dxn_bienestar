@@ -1,3 +1,7 @@
+/**
+ *  Componente para mostrar información de contacto, enlaces rápidos y redes sociales en la parte inferior de la página.
+ */
+
 import { Leaf, Map, Phone, Mail } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -6,7 +10,7 @@ function Footer() {
     <footer className="flex flex-col gap-2 m-2">
       {/* Descripcion */}
       <div className="py-3 px-2">
-        <h2 className="flex font-bold text-text-primary font-['Lexend'] gap-2 pb-3">
+        <h2 className="flex font-bold text-text-primary gap-2 pb-3">
           <Leaf className="text-primary stroke-3" />
           DXN Bienestar
         </h2>
@@ -17,9 +21,7 @@ function Footer() {
       </div>
       {/* Enlaces */}
       <div className="my-3 mx-2">
-        <h2 className="font-bold text-text-primary font-['Lexend'] pb-3">
-          Enlaces Rápidos
-        </h2>
+        <h2 className="font-bold text-text-primary pb-3">Enlaces Rápidos</h2>
         <nav>
           <ul className="grid grid-cols-2">
             <li className="py-1">
@@ -67,33 +69,22 @@ function Footer() {
       </div>
       {/* Contacto */}
       <div className="my-3 mx-2">
-        <h2 className="font-bold text-text-primary font-['Lexend'] pb-3">
-          Contacto
-        </h2>
+        <h2 className="font-bold text-text-primary pb-3">Contacto</h2>
         <nav>
           <ul>
             <li className="py-1">
-              <a
-                href="#"
-                className="flex text-text-secondary font-['Lexend'] gap-2"
-              >
+              <a href="#" className="flex text-text-secondary gap-2">
                 <Map className="text-primary" /> Av.Principal 123, Ciudad de
                 Perú
               </a>
             </li>
             <li className="py-1">
-              <a
-                href="#"
-                className="flex text-text-secondary font-['Lexend'] gap-2"
-              >
+              <a href="#" className="flex text-text-secondary gap-2">
                 <Phone className="text-primary" /> +51 945 654 351
               </a>
             </li>
             <li className="py-1">
-              <a
-                href="#"
-                className="flex text-text-secondary font-['Lexend'] gap-2"
-              >
+              <a href="#" className="flex text-text-secondary gap-2">
                 <Mail className="text-primary" /> contacto@dxnbienestar.com
               </a>
             </li>
@@ -102,9 +93,7 @@ function Footer() {
       </div>
       {/* Redes sociales */}
       <div className="my-3 mx-2">
-        <h2 className="font-bold text-text-primary font-['Lexend'] pb-3">
-          Síguenos
-        </h2>
+        <h2 className="font-bold text-text-primary pb-3">Síguenos</h2>
         <div className="flex gap-3">
           <button className="bg-secondary p-2 rounded-full">
             <FaFacebook className="text-xl text-text-secondary" />
@@ -116,7 +105,7 @@ function Footer() {
       </div>
       {/* Foot */}
       <div className="foot m-5">
-        <p className=" text-text-muted font-['Lexend'] flex items-center text-xs">
+        <p className=" text-text-muted flex items-center text-xs">
           &copy; {new Date().getFullYear()} DXN Bienestar. Todos los derechos
           reservados.
         </p>
