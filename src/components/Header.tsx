@@ -3,13 +3,18 @@
  */
 
 import { useState } from "react";
+import { useTheme } from "next-themes";
 import { Leaf, Sun, Moon, UserPlus } from "lucide-react";
 
 function Header() {
-  /** useState para manejar el modo oscuro y claro */
-  const [darkMode, setDarkMode] = useState(false);
+  /** useTheme para manejar el modo oscuro y claro */
+  const { theme, setTheme } = useTheme();
   /** useState para marcar el acceso directo seleccionado */
   const [seccionMarcado, setSeccionMarcado] = useState(false);
+
+  //verifica el modo oscuro
+  const isDark = theme === "dark";
+
   return (
     <>
       <header className="w-full h-auto justify-between flex items-center px-4 py-3 border-b border-border-subtle bg-header-bg dark:bg-header-bg">
@@ -59,10 +64,10 @@ function Header() {
             Afíliate <UserPlus className="stroke-3 text-text-primary w-4" />
           </button>
           <button
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={() => setTheme(isDark ? "light" : "dark")}
             className="border border-[#A7F3D0]/50 bg-[#ECFDF5] rounded-full p-2 shadow cursor-pointer"
           >
-            {darkMode ? (
+            {isDark ? (
               <Sun className="text-text-primary" />
             ) : (
               <Moon className="text-text-primary" />

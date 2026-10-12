@@ -8,6 +8,11 @@ Una aplicación web moderna y responsiva para mostrar el catálogo de productos,
 - **Tailwind CSS (v4):** Para el maquetado responsivo y estilos.
 - **Lucide React:** Para la iconografía limpia y moderna.
 - **React Icons:** Para recursos visuales y logotipos de marcas.
+- **next-themes:** Para manejar el modo oscuro y claro de forma dinamica.
+
+## Arquitectura del Proyecto
+
+- `src/providers.tsx`: Componente proveedor global (`ThemeProviders`) que envuelve la aplicación utilizando `next-themes` con `attribute="class"` para sincronizar la clase `.dark`.
 
 ## Cómo ejecutar el proyecto en tu computadora
 
