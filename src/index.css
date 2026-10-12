@@ -1,5 +1,31 @@
 @import "tailwindcss";
+
+:root {
+  --color-bg-app-val: #f4fbf4;
+  --color-surface-val: #f8faf8;
+  --color-border-subtle-val: #e2ece3;
+
+  --color-header-bg-val: rgba(255, 255, 255, 0.85);
+  --color-brand-title-val: #047857;
+}
+
+.dark {
+  --color-bg-app-val: #06120d;
+  --color-surface-val: #0f231a;
+  --color-border-subtle-val: #1b3b2d;
+
+  --color-header-bg-val: rgba(6, 18, 13, 0.85);
+  --color-brand-title-val: #34d399;
+}
+
 @theme {
+  --color-bg-app: var(--color-bg-app-val);
+  --color-surface: var(--color-surface-val);
+  --color-border-subtle: var(--color-border-subtle-val);
+
+  --color-header-bg: var(--color-header-bg-val);
+  --color-brand-title: var(--color-brand-title-val);
+
   --color-primary: #10b981;
   --color-accent: #d4af37;
   --color-secondary: #f3f4f6;
@@ -13,5 +39,7 @@
 @layer base {
   body {
     font-family: var(--font-lexend);
+
+    background-color: var(--color-bg-app);
   }
 }

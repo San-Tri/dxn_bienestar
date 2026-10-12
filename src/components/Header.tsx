@@ -3,7 +3,7 @@
  */
 
 import { useState } from "react";
-import { Leaf, Sun, Moon } from "lucide-react";
+import { Leaf, Sun, Moon, UserPlus } from "lucide-react";
 
 function Header() {
   /** useState para manejar el modo oscuro y claro */
@@ -12,8 +12,8 @@ function Header() {
   const [seccionMarcado, setSeccionMarcado] = useState(false);
   return (
     <>
-      <header className="w-full h-auto justify-between flex items-center px-4 py-3 border-b border-black/6">
-        <div className="flex gap-2">
+      <header className="w-full h-auto justify-between flex items-center px-4 py-3 border-b border-border-subtle bg-header-bg dark:bg-header-bg">
+        <div className="flex gap-2 cursor-pointer">
           <Leaf className="text-primary stroke-3" />
           <p className="font-bold text-text-primary">DXN Bienestar</p>
         </div>
@@ -55,17 +55,17 @@ function Header() {
         </nav>
 
         <div className="flex gap-4">
-          <button className="hidden md:block rounded-full px-5 py-2 font-bold bg-accent">
-            Afíliate
+          <button className="hidden md:flex gap-1 rounded-full px-5 py-2 font-semibold bg-accent text-text-primary shadow cursor-pointer">
+            Afíliate <UserPlus className="stroke-3 text-text-primary w-4" />
           </button>
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="border border-[#A7F3D0]/50 bg-[#ECFDF5] rounded-full p-2"
+            className="border border-[#A7F3D0]/50 bg-[#ECFDF5] rounded-full p-2 shadow cursor-pointer"
           >
             {darkMode ? (
-              <Moon className="text-text-primary" />
-            ) : (
               <Sun className="text-text-primary" />
+            ) : (
+              <Moon className="text-text-primary" />
             )}
           </button>
         </div>
