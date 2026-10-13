@@ -2,34 +2,39 @@
 
 :root {
   --color-bg-app-val: #f4fbf4;
-  --color-surface-val: #f8faf8;
-  --color-border-subtle-val: #e2ece3;
+  --color-surface-val: #ecfdf5;
+  --color-border-subtle-val: #a7f3d0;
+  --color-text-primary-val: #1f2937;
 
   --color-header-bg-val: rgba(255, 255, 255, 0.85);
   --color-brand-title-val: #047857;
+  --color-nav-text-hover-val: #059669;
 }
 
 .dark {
   --color-bg-app-val: #06120d;
   --color-surface-val: #0f231a;
   --color-border-subtle-val: #1b3b2d;
+  --color-text-primary-val: #e1e1e1;
 
   --color-header-bg-val: rgba(6, 18, 13, 0.85);
   --color-brand-title-val: #34d399;
+  --color-nav-text-hover-val: #34d399;
 }
 
 @theme {
   --color-bg-app: var(--color-bg-app-val);
   --color-surface: var(--color-surface-val);
   --color-border-subtle: var(--color-border-subtle-val);
+  --color-text-primary: var(--color-text-primary-val);
 
   --color-header-bg: var(--color-header-bg-val);
   --color-brand-title: var(--color-brand-title-val);
+  --color-nav-text-hover: var(--color-nav-text-hover-val);
 
-  --color-primary: #10b981;
+  --color-primary: #34d399;
   --color-accent: #d4af37;
   --color-secondary: #f3f4f6;
-  --color-text-primary: #1f2937;
   --color-text-secondary: #4b5563;
   --color-text-muted: #9ca3af;
 
@@ -41,5 +46,9 @@
     font-family: var(--font-lexend);
 
     background-color: var(--color-bg-app);
+
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
 }

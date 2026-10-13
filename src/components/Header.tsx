@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <>
-      <header className="w-full h-auto justify-between flex items-center px-4 py-3 border-b border-border-subtle bg-header-bg dark:bg-header-bg">
+      <header className="w-full h-auto justify-between flex items-center px-4 py-3 border-b border-border-subtle bg-header-bg">
         <div className="flex gap-2 cursor-pointer">
           <Leaf className="text-primary stroke-3" />
           <p className="font-bold text-text-primary">DXN Bienestar</p>
@@ -28,7 +28,7 @@ function Header() {
           <ul className="flex gap-10">
             <li onClick={() => setSeccionMarcado(!seccionMarcado)} className="">
               {seccionMarcado ? (
-                <a href="#" className="text-text-primary">
+                <a href="#" className="text-nav-text hover:text-nav-text-hover">
                   Inicio
                 </a>
               ) : (
@@ -42,17 +42,26 @@ function Header() {
               )}
             </li>
             <li className="">
-              <a href="#" className="text-text-primary">
+              <a
+                href="#"
+                className="text-text-primary hover:text-nav-text-hover"
+              >
                 Productos
               </a>
             </li>
             <li className="">
-              <a href="#" className="text-text-primary">
+              <a
+                href="#"
+                className="text-text-primary hover:text-nav-text-hover"
+              >
                 Novedades
               </a>
             </li>
             <li className="">
-              <a href="#" className="text-text-primary">
+              <a
+                href="#"
+                className="text-text-primary hover:text-nav-text-hover"
+              >
                 Contacto
               </a>
             </li>
@@ -60,17 +69,17 @@ function Header() {
         </nav>
 
         <div className="flex gap-4">
-          <button className="hidden md:flex gap-1 rounded-full px-5 py-2 font-semibold bg-accent text-text-primary shadow cursor-pointer">
-            Afíliate <UserPlus className="stroke-3 text-text-primary w-4" />
+          <button className="hidden md:flex gap-1 rounded-full px-5 py-2 font-semibold bg-accent text-[#1f2937] shadow cursor-pointer">
+            Afíliate <UserPlus className="stroke-3 text-[#1f2967] w-4" />
           </button>
           <button
             onClick={() => setTheme(isDark ? "light" : "dark")}
-            className="border border-[#A7F3D0]/50 bg-[#ECFDF5] rounded-full p-2 shadow cursor-pointer"
+            className="border border-border-subtle bg-surface rounded-full p-2 shadow cursor-pointer"
           >
             {isDark ? (
-              <Sun className="text-text-primary" />
+              <Sun className="text-brand-title" />
             ) : (
-              <Moon className="text-text-primary" />
+              <Moon className="text-brand-title" />
             )}
           </button>
         </div>
